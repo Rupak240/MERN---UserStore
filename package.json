@@ -1,0 +1,26 @@
+{
+  "name": "mern-userlist",
+  "version": "1.0.0",
+  "description": "A MERN application to store, add, edit, delete a User",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client-userList",
+    "clientinstall": "npm install --prefix client-userList",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.6",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
